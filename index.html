@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Formulário - DOM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de cadastro</h1>
+        <form id="cadastroForm">
+            <div class="form-group">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="email" type="email" name="email" id="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite seu senha" required>
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="senha2">Senha</label>
+                <input type="password" name="senha" id="senha2" placeholder="Digite seu senha" required>
+            </div> -->
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+
+        <div id="mensagem">
+            <!-- será adicionado contéudo aqui dentro, usando JavaScript com innerHTML, ou innerText, ou textContent -->
+        </div>
+        
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
